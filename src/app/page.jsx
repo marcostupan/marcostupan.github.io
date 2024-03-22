@@ -28,7 +28,7 @@ const Homepage = () => {
           {/* Text Container */}
           <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
             {/* TITLE */}
-            <h1 className="text-4xl md:text-6xl font-bold">
+            <h1 className="text-2xl md:text-4xl font-bold">
               Criando Experiências Digitais, Comprometimento com Excelência{" "}
             </h1>
             {/* DESCRIPTION */}
