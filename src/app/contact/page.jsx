@@ -57,13 +57,15 @@ const ContactPage = () => {
           <textarea
             name="mensagem"
             rows={6}
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+            placeholder="Insira sua mensgem..."
+            className="bg-transparent border-b-2 border-b-black outline-none resize-none h-24 p-2"
           />
           <span  >Meu email é:</span>
           <input
             type="text"
             name="_replyto"
-            className="bg-transparent border-b-2 border-b-black outline-none"
+            placeholder="Insira o Email..."
+            className="bg-transparent border-b-2 border-b-black outline-none p-2"
           />
           <span>Muito obrigado,</span>
           <button type="submit" target="_blank" className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
