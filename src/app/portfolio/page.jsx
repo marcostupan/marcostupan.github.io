@@ -129,14 +129,14 @@ const PortifolioPage = () => {
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
+                <div className="flex flex-col gap-4 text-white">
+                  <h1 className="text-lg md:text-2xl lg:text-4xl xl:text-6xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+                  <div className="relative w-64 h-40 md:w-72 md:h-48 lg:w-96 lg:h-64 xl:w-112 xl:h-80">
                     <Image src={item.img} alt="" fill />
                   </div>
-                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <p className="w-64 md:w-72 lg:w-96 lg:text-base xl:w-112" >
                     {item.desc}
                   </p>
                   <Link
@@ -144,7 +144,7 @@ const PortifolioPage = () => {
                     target="_blank"
                     className="flex justify-center"
                   >
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                    <button className="p-1 text-sm md:p-2 md:text-md lg:p-4 lg:text-base bg-white text-gray-600 font-semibold m-4 rounded">
                       Veja!
                     </button>
                   </Link>
