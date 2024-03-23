@@ -51,23 +51,23 @@ const ContactPage = () => {
         <form
           action="https://formspree.io/f/mvoebypn"
           method="POST"
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl  flex flex-col gap-8 justify-center p-24"
+          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl  flex flex-col gap-8 justify-center p-10"
         >
-          <span>Caro Marcos Ribeiro,</span>
+          <span  style={{ marginBottom: "8px" }} >Caro Marcos Ribeiro,</span>
           <textarea
             name="mensagem"
             rows={6}
             placeholder="Insira sua mensgem..."
             className="bg-transparent border-b-2 border-b-black outline-none resize-none h-24 p-2"
           />
-          <span  >Meu email é:</span>
+          <span style={{ marginBottom: "8px" }} >Meu email é:</span>
           <input
             type="text"
             name="_replyto"
             placeholder="Insira o Email..."
             className="bg-transparent border-b-2 border-b-black outline-none p-2"
           />
-          <span>Muito obrigado,</span>
+          <span  >Muito obrigado,</span>
           <button type="submit" target="_blank" className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
             Enviar
           </button>
