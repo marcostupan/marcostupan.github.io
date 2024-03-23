@@ -22,7 +22,7 @@ const Homepage = () => {
               src="/Marcos_Auditor.png"
               fill
               alt=""
-              className=" sm:w-auto md:w-auto object-contain"
+              className=" w-full h-auto sm:w-auto md:w-auto lg:w-auto object-contain"
             />
           </div>
           {/* Text Container */}

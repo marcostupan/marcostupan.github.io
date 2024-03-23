@@ -180,9 +180,9 @@ const AboutPage = () => {
               EXPERIENCIA/EXPERIENCE
             </motion.h1>
             {/* EXPERIENCE LIST */}
-            <motion.div
-              initial={{ x: "-50px" }}
-              animate={isExperienceRefInView ? { x: "0" } : {}}
+            <div
+              // initial={{ x: "-50px" }}
+              // animate={isExperienceRefInView ? { x: "0" } : {}}
               className="">
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-48">
@@ -292,7 +292,7 @@ const AboutPage = () => {
                 {/* RIGHT */}
                 <div className="w-1/3 "></div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
 
