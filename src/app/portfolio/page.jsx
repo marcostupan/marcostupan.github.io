@@ -3,16 +3,9 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import DashboardCard from "@/components/dashboards";
 
 const items = [
-  {
-    id: 0,
-    color: "from-purple-300 to-red-300",
-    title: "Mova seu scroll para baixo",
-    desc: "Va deslizando  para ver os projetos",
-    img: "",
-    link: "",
-  },
   {
     id: 1,
     color: "from-red-300 to-blue-300",
@@ -93,15 +86,9 @@ const items = [
     img: "/projects/9_ Mr7 Store.png",
     link: "https://mr-7-store.vercel.app/",
   },
-  {
-    id: 11,
-    color: "from-violet-300 to-purple-300",
-    title: "Veja o Git",
-    desc: "Clique e veja o GitHub",
-    img: "",
-    link: "https://github.com/marcostupan",
-  },
+ 
 ];
+
 
 const PortifolioPage = () => {
   const ref = useRef();
@@ -116,46 +103,60 @@ const PortifolioPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-[600vh] relative" ref={ref}>
+      <div className="h-[550vh]  relative" ref={ref}>
         <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center sm:text-4xl text-8xl  text-center">
           Meus Projetos ↓
         </div>
 
-        <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
-          <motion.div style={{ x }} className="flex">
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
-            {items.map((item) => (
-              <div
-                className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
-                key={item.id}
-              >
-                <div className="flex flex-col gap-4 text-white">
-                  <h1 className="text-lg md:text-2xl lg:text-4xl xl:text-6xl">
-                    {item.title}
-                  </h1>
-                  <div className="relative w-64 h-40 md:w-72 md:h-48 lg:w-96 lg:h-64 xl:w-112 xl:h-80">
-                    <Image src={item.img} alt="" fill />
-                  </div>
-                  <p className="w-64 md:w-72 lg:w-96 lg:text-base xl:w-112" >
-                    {item.desc}
-                  </p>
-                  <Link
-                    href={item.link}
-                    target="_blank"
-                    className="flex justify-center"
-                  >
-                    <button className="p-1 text-sm md:p-2 md:text-md lg:p-4 lg:text-base bg-white text-gray-600 font-semibold m-4 rounded">
-                      Veja!
-                    </button>
-                  </Link>
+        {/* Cards Dev */}
+        <h2 className="text-2xl font-semibold mb-4 text-center mt-[10vh] mb-[10vh] relative">
+          Projetos de Desenvolvimento Front-end
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {items.map((item) => (
+            <div
+              className={`bg-gradient-to-r ${item.color} text-white rounded-lg overflow-hidden`}
+              key={item.id}
+            >
+              <div className="p-4">
+                <h1 className="text-lg md:text-2xl lg:text-4xl xl:text-6xl">
+                  {item.title}
+                </h1>
+                <div className="relative w-full h-40 md:w-72 md:h-48 lg:w-96 lg:h-64 xl:w-112 xl:h-80">
+                  <Image
+                    src={item.img}
+                    alt=""
+                    // layout="fill"
+                    width={800}
+                    height={600}
+                    objectFit="cover"
+                  />
                 </div>
+                <p className="mt-4">{item.desc}</p>
+                <Link
+                  href={item.link}
+                  target="_blank"
+                  className="flex justify-center mt-4"
+                >
+                  <button className="p-1 text-sm md:p-2 md:text-md lg:p-4 lg:text-base bg-white text-gray-600 font-semibold rounded">
+                    Veja!
+                  </button>
+                </Link>
               </div>
-            ))}
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
-          </motion.div>
+            </div>
+          ))}
+        </div>
+        
+        <div className="h-[40vh] relative flex items-center justify-center text-lg">
+          <h1>Acesse meu GitHub (marcostupan)</h1>
+          <Link href="https://github.com/marcostupan" target="_blank">
+            <Image src="/github.png" alt="" width={50} height={48} />
+          </Link>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
+
+      {/* Voce tem algum proejto? */}
+      <div className=" w-full  w-screen h-screen flex flex-col gap-16 items-center justify-center text-center md:mt-[25vh] ">
         <h1 className="text-4xl md:text-2xl ">Você tem algum projeto?</h1>
         <div className="relative">
           <motion.svg
@@ -183,7 +184,7 @@ const PortifolioPage = () => {
             Contrate
           </Link>
         </div>
-        <div className="md:flex gap-4  flex-center" >
+        <div className="md:flex gap-4  flex-center">
           <Link href="https://github.com/marcostupan" target="_blank">
             <Image src="/github.png" alt="" width={50} height={48} />
           </Link>
@@ -200,3 +201,38 @@ const PortifolioPage = () => {
 };
 
 export default PortifolioPage;
+
+
+        {/* <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
+          <motion.div style={{ x }} className="flex">
+            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
+            {items.map((item) => (
+              <div
+                className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
+                key={item.id}
+              >
+                <div className="flex flex-col gap-4 text-white">
+                  <h1 className="text-lg md:text-2xl lg:text-4xl xl:text-6xl">
+                    {item.title}
+                  </h1>
+                  <div className="relative w-67 h-40 md:w-72 md:h-48 lg:w-96 lg:h-64 xl:w-112 xl:h-80">
+                    <Image src={item.img} alt="" width={800} height={600} />
+                  </div>
+                  <p className="w-64 md:w-72 lg:w-96 lg:text-base xl:w-112">
+                    {item.desc}
+                  </p>
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    className="flex justify-center"
+                  >
+                    <button className="p-1 text-sm md:p-2 md:text-md lg:p-4 lg:text-base bg-white text-gray-600 font-semibold m-4 rounded">
+                      Veja!
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            ))}
+            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
+          </motion.div>
+        </div> */}

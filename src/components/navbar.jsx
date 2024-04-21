@@ -10,6 +10,7 @@ const links = [
     { url: '/about', title: 'Sobre'},
     { url: '/portfolio', title: 'Portfolio'},
     { url: '/contact', title: 'Contato'},
+    { url: '/dashboards', title: 'PowerBI'},
   
 ];
 
