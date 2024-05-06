@@ -45,6 +45,24 @@ const dashboards = [
     imageUrl: "dashboards/7.DashRh02.png",
     link: "https://app.powerbi.com/view?r=eyJrIjoiNjIwMzlkYjUtMGIzYy00NjM5LWI4M2EtNDEwZDk5MTE1ZmIyIiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
   },
+  {
+    id: 8,
+    title: "Dashboard RH 3",
+    imageUrl: "dashboards/8. Dash_RH_3.jpg",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiMmQ3YmIyODYtMzRiNi00ODFkLWFlZDEtYjJkOWJlMThmMjVmIiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
+  },
+  {
+    id: 9,
+    title: "Dashboard Vendas 2",
+    imageUrl: "dashboards/9. Dash _Vendas_02.jpg",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiMmExZTViNGQtOWY4ZC00NmQxLTk3NWMtNWUwZDJiMGJkYWU2IiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
+  },
+  {
+    id: 10,
+    title: "Dashboard Musicais CCB",
+    imageUrl: "dashboards/10. Dash_musical_CCB.jpg",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiYzEwYmM0ZTUtMDg4Mi00MTg5LWFlNDUtNDBiN2E0N2E3YzUzIiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
+  },
 ];
 
 
@@ -65,7 +83,7 @@ const DashboardsPage = () => {
           </div>
         </div>
         <div className="h-[40vh] relative flex items-center justify-center text-lg">
-          <a href="/contact">
+          <a href="/contact" className="p-4 rounded-lg ring-1 text-center ring-black bg-black text-white" >
             <h1 className="pointer text-2xl bold">Entre em Contato</h1>
           </a>
         </div>
