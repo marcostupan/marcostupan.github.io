@@ -61,7 +61,25 @@ const dashboards = [
     id: 10,
     title: "Dashboard Musicais CCB",
     imageUrl: "dashboards/10. Dash_musical_CCB.jpg",
-    link: "https://app.powerbi.com/view?r=eyJrIjoiYzEwYmM0ZTUtMDg4Mi00MTg5LWFlNDUtNDBiN2E0N2E3YzUzIiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiZTNiN2U4YjEtZjJhYi00Y2VlLTg3M2EtOWU5NGVmMzMzYzZiIiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
+  },
+  {
+    id: 11,
+    title: "Dashboard de Vendas 03",
+    imageUrl: "dashboards/11.Dash_vendas_03.jpg",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiN2ZiZGU1NDctNDJjYi00ZWFkLThiZTEtMzk0ZjE4ZmMwYjM0IiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
+  },
+  {
+    id: 12,
+    title: "Dashboard de Vendas 04",
+    imageUrl: "dashboards/12. Dash de Vendas_04.jpg",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiNDNhZmNhOTctYTVhMi00OTI0LTgwNzMtMTZkZmJjMjkxZDY4IiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
+  },
+  {
+    id: 13,
+    title: "Dashboard de Logística",
+    imageUrl: "dashboards/13.Dash_Logistica_01.jpg",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiYjg5ZTZiNzUtZTUwMi00ZTA2LWE5YTYtN2QxNzQxZDI3ZjAzIiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
   },
 ];
 
