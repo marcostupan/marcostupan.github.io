@@ -77,9 +77,39 @@ const dashboards = [
   },
   {
     id: 13,
-    title: "Dashboard de Logística",
+    title: "Dashboard de Logística 01",
     imageUrl: "dashboards/13.Dash_Logistica_01.jpg",
     link: "https://app.powerbi.com/view?r=eyJrIjoiYjg5ZTZiNzUtZTUwMi00ZTA2LWE5YTYtN2QxNzQxZDI3ZjAzIiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
+  },
+  {
+    id: 14,
+    title: "Dashboard de Logística 02",
+    imageUrl: "dashboards/14. Dash_Logistica 02.jpg",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiZmQ3NGRlMWItYmY3NS00NjQxLThjZmEtMGFjMWEwYmNhOGY1IiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
+  },
+  {
+    id: 15,
+    title: "Dashboard de Recursos Humanos 04",
+    imageUrl: "dashboards/15.Dash_RH_04.jpg",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiZGIwMDVkMTktYjY4ZS00OGZjLWI5OTctNmZlNTQ5YjNjNDk4IiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
+  },
+  {
+    id: 16,
+    title: "Dashboard de Recursos Humanos 05",
+    imageUrl: "dashboards/16. Dash_RH_05.jpg",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiN2YxZGEzODgtZTJlMS00YjlhLTg2ODAtMzZjODE5OGFmMzRlIiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
+  },
+  {
+    id: 17,
+    title: "Dashboard de Vendas 05",
+    imageUrl: "dashboards/17.Dash_Vendas_05.jpg",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiMzE5NDAyYzItYTBkOC00OWVmLWFkMzUtMDcxZDE5ZWE0NmFmIiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
+  },
+  {
+    id: 18,
+    title: "Dashboard de Análise de Produto 01",
+    imageUrl: "dashboards/18. Dash_Análise de Produtos_01.jpg",
+    link: "https://app.powerbi.com/view?r=eyJrIjoiNmNlNzJkY2QtMDRhOS00YzQ4LThiMDYtN2MzYTBjYWU1YzE4IiwidCI6IjA4NjM3ZDUzLTU1NmItNGFmZS04NDJjLTVlYjRkMzIxOWQ2NCJ9",
   },
 ];
 
